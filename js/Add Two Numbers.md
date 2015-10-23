@@ -36,7 +36,6 @@ var addTwoNumbers = function(l1, l2) {
 };
 ```
 
-python:
 
 ```python
 # Definition for singly-linked list.
