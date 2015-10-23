@@ -6,6 +6,7 @@ Note:
 You must do this in-place without making a copy of the array.
 Minimize the total number of operations.
 
+### js
 
 ```js
 /**
@@ -23,4 +24,16 @@ var moveZeroes = function(nums) {
     }
 
 };
+```
+
+### ruby
+
+```ruby
+# @param {Integer[]} nums
+# @return {Void} Do not return anything, modify nums in-place instead.
+def move_zeroes(nums)
+    count = nums.count(0)
+    nums.delete(0)
+    nums.concat(Array.new(count, 0))
+end
 ```
