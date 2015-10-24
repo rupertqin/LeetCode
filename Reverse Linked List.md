@@ -51,6 +51,25 @@ var reverseList = function(head) {
     return ret
 };
 ```
+**recursive:**
+
+```js
+var reverseList = function(head, last) {
+    // init in first 
+    if (!last) last = null
+
+    var curr;
+    if (head !== null){
+        curr = head
+        head = head.next
+        curr.next = last
+    } else {
+        // run thin only when first recurence, head is empty
+        curr = null
+    }
+    return head ? reverseList(head, curr) : curr
+};
+```
 
 ### python
 
@@ -78,7 +97,7 @@ class Solution(object):
         return ret
 ```
 ### ruby
-
+**iteratively**
 ```rb
 # Definition for singly-linked list.
 # class ListNode
@@ -102,5 +121,15 @@ def reverse_list(head)
     end
     return ret
     
+end
+```
+**recursive:**
+```rb
+def reverse_list(head, _rev = nil)
+    if head
+      _new = ListNode.new(head.val)
+      _new.next = _rev
+    end
+    head ? reverse_list(head.next, _new) : _rev
 end
 ```
