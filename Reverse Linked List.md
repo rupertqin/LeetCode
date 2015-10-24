@@ -15,7 +15,7 @@ Reverse a singly linked list.
  ```
 ### js 
 
-#### iteratively twice:
+###### iteratively twice:
 
 ```js
 var reverseList = function(head) {
@@ -36,7 +36,7 @@ var reverseList = function(head) {
 };  
 ```
 
-#### iteratively once:
+###### iteratively once:
 
 ```js
 var reverseList = function(head) {
