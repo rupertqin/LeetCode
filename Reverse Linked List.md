@@ -54,7 +54,7 @@ var reverseList = function(head) {
 
 ### python
 
-```python
+```py
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
@@ -76,5 +76,31 @@ class Solution(object):
             pos.next = ret
             ret = pos
         return ret
+```
+### ruby
 
+```rb
+# Definition for singly-linked list.
+# class ListNode
+#     attr_accessor :val, :next
+#     def initialize(val)
+#         @val = val
+#         @next = nil
+#     end
+# end
 
+# @param {ListNode} head
+# @return {ListNode}
+def reverse_list(head)
+    ret = nil
+    pos = nil
+    while head do
+        pos = head
+        head = head.next
+        pos.next = ret
+        ret = pos
+    end
+    return ret
+    
+end
+```
