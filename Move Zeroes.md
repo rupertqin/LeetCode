@@ -37,3 +37,11 @@ def move_zeroes(nums)
     nums.concat(Array.new(count, 0))
 end
 ```
+
+### python
+```py
+def moveZeroes(self, nums):
+    for x in nums:
+        if x ==0: 
+            nums.remove(x)
+            nums.append(0)
