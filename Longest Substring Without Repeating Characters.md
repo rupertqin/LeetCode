@@ -47,7 +47,7 @@ def lengthOfLongestSubstring(self, s):
     return maxlen
 ```
 
-### ruby
+### ruby:
 ```rb
 def length_of_longest_substring(s)
     str = ""
