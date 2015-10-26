@@ -46,3 +46,22 @@ def lengthOfLongestSubstring(self, s):
         
     return maxlen
 ```
+
+### ruby
+```rb
+def length_of_longest_substring(s)
+    str = ""
+    maxlen = 0
+    s.each_char { |ch| 
+        prevIdx = str.index(ch)
+        if prevIdx.nil?
+            str = str + ch
+            if str.length > maxlen then maxlen = str.length end
+        else
+            if str.length > maxlen then maxlen = str.length end
+            str = str[prevIdx+1..-1] + ch
+        end
+    }
+    return maxlen
+end
+```
