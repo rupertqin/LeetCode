@@ -42,7 +42,7 @@ def lengthOfLongestSubstring(self, s):
             if len(str) > maxlen : maxlen = len(str)
         else :
             if len(str) > maxlen : maxlen = len(str)
-            str = str[prevIdx+1:] + s[i]
+            str = str[prevIdx+1:] + ch
         
     return maxlen
 ```
