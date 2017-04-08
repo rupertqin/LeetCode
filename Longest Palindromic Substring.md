@@ -26,7 +26,7 @@ var longestPalindrome = function(s) {
 };
 ```
 
-## 奇偶两边扩展
+## 奇偶两边扩展 (435ms)
 ```js
 var longestPalindrome = function(s) {
   var result = [0,0];
@@ -54,7 +54,7 @@ var longestPalindrome = function(s) {
 };
 ```
 
-## 不分奇偶，优先匹配重复字母
+## 不分奇偶，优先匹配重复字母（145ms）
 
 把字符串分为两个情况：
 1、 中间一跎， 如 "abcccccccbae"
